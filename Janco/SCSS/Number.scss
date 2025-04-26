@@ -1,0 +1,128 @@
+$main-color: #0077cc;
+$bg-color: #ffbb00;
+$font-stack: "Arial", sans-serif;
+
+body {
+  background-color: $bg-color;
+  font-family: $font-stack;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-family: Comic Sans MS, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+} 
+
+#numberAlign {
+  display: flex;
+  flex-direction: row;
+  align-items: center; // Center items vertically
+  justify-content: center; // Center items horizontally
+  width: 100%; // Ensure it spans the full width of the page
+
+  #buttonAlign {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  #game-container {
+    display: inline-block;
+    background: white;
+    padding: 0 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    margin: 0 auto; // Center the container horizontally
+
+    #number-display {
+      border: 2px solid red;
+      border-radius: 20px;
+      background-color: #fcf799;
+      font-size: 200px;
+      color: $main-color;
+      margin-bottom: 20px;
+      font-family: "Arial Black";
+    }
+
+    input[type="text"] {
+      font-size: 30px;
+      width: 300px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    button {
+      font-size: 25px;
+      padding: 10px 80px;
+      cursor: pointer;
+      background-color: $main-color;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      margin: 0 auto;
+      display: block; // Ensures the button is treated as a block element for centering
+
+      &:hover {
+      background-color: darken($main-color, 10%);
+      }
+    }
+
+    #message {
+      font-size: 25px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color;
+  padding: 150% 20px 150% 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+  button {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: $main-color;
+    color: white;
+    border: none;
+    margin: 1px;
+
+    &:hover {
+      background-color: darken($main-color, 10%);
+    }
+  }
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  background-color: white;
+  border-radius: 20px;
+  width: 30%;
+  max-width: 500px;
+  padding: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+}
+
+#intro h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: black;
+  margin: 0;
+}

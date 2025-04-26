@@ -1,0 +1,61 @@
+body {
+  background-color: #ffbb00;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  height: 100vh;
+  background-color: #ffbb00;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-family: Comic Sans MS, sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffbb00;
+  padding: 150% 20px 150% 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+nav button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  margin: 1px;
+}
+nav button:hover {
+  background-color: #005999;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  background-color: white;
+  border-radius: 20px;
+  width: 30%;
+  max-width: 500px;
+  padding: 10px;
+  box-shadow: 0 8px 20px rgb(0, 0, 0);
+}
+
+#intro h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: black;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}/*# sourceMappingURL=daysOfTheWeek.css.map */

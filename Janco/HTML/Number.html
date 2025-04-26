@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Number Game</title>
+    <link rel="stylesheet" href="../SCSS/Number.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <!-- Intro and nav button where you what to go -->
+      <div id="intro">
+        <h1>Hi Janco</h1>
+      </div>
+      <nav id="otherGames">
+        <button><a href="../HTML/Number.html">Number into words</a></button>
+        <button>
+          <a href="../HTML/colorIntoWords.html">Color into words</a>
+        </button>
+        <button>
+          <a href="../HTML/daysOfTheWeek.html">Days of the week</a>
+        </button>
+        <button>Months of the Year</button>
+      </nav>
+    </div>
+
+    <!-- Number into words -->
+    <div id="numberAlign">
+      <div id="game-container">
+        <h2>👇🏽 Number in words? 👇🏽</h2>
+        <div id="number-display">1</div>
+        <div id="buttonAlign">
+          <input type="text" id="user-input" autocomplete="off" />
+          <button id="check-btn">OK</button>
+        </div>
+        <div id="message"></div>
+      </div>
+    </div>
+
+    <script src="../js/number.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+$main-color: #0077cc;
+$bg-color: #ffbb00;
+$font-stack: "Arial", sans-serif;
+
+body {
+  background-color: $bg-color;
+  font-family: $font-stack;
+  text-align: center;
+  height: 100vh;
+  background-color: $bg-color;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-family: Comic Sans MS, sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color;
+  padding: 150% 20px 150% 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+  button {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: $main-color;
+    color: white;
+    border: none;
+    margin: 1px;
+
+    &:hover {
+      background-color: darken($main-color, 10%);
+    }
+  }
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  background-color: white;
+  border-radius: 20px;
+  width: 30%;
+  max-width: 500px;
+  padding: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+}
+
+#intro h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: black;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+} 
