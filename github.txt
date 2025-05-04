@@ -1,0 +1,7 @@
+Git hub path (HTTPS)
+
+https://github.com/DeTrack123/ChristoSwanepoel.git
+
+Git hub path (SSH)
+
+git@github.com:DeTrack123/ChristoSwanepoel.git
