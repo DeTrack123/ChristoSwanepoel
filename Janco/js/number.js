@@ -1,5 +1,6 @@
 // Map of numbers to words
 const numberWords = {
+  0: "zero",
   1: "one",
   2: "two",
   3: "three",
@@ -22,7 +23,7 @@ const numberWords = {
   20: "twenty",
 };
 
-let currentNumber = 1;
+let currentNumber = 0;
 
 $(document).ready(function () {
   $("#user-input").keydown(function (event) {
@@ -42,7 +43,10 @@ $(document).ready(function () {
 
     if (userInput === correctWord) {
       $("#user-input").focus();
-      $("#message").text("Awesome! ✅").css({ color: "green" });
+      $("#message").text("Good job Janco! ✅").css({
+        fontSize: "30px",
+        color: "green",
+      });
 
       currentNumber++;
 
@@ -51,6 +55,13 @@ $(document).ready(function () {
         $("#message")
           .text("You finished! Well done Janco!")
           .css("color", "blue");
+        setTimeout(() => {
+          $("#number-display").text(currentNumber);
+          $("#user-input").val("");
+          $("#message").text("");
+          ffffffiGG;
+        }, 5000);
+        currentNumber = 0;
       } else if (currentNumber === 11) {
         $("#number-display").text("😀");
         $("#message").text("Yes Janco, almost there").css("color", "blue");
@@ -71,6 +82,16 @@ $(document).ready(function () {
           $("#message").text("");
         }, 1000);
       }
+    } else {
+      $("#message").text("Try again! ❌").css({
+        fontSize: "30px",
+        color: "red",
+      });
+      setTimeout(() => {
+        $("#number-display").text(currentNumber);
+        $("#user-input").val("");
+        $("#message").text("");
+      }, 1000);
     }
   });
   const randomColor = "#" + (Math.random().toString(16) + "00000").slice(2, 8);

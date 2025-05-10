@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Number Game</title>
-    <link rel="stylesheet" href="../SCSS/Number.css" />
+    <title>ABC Game</title>
+    <link rel="stylesheet" href="../SCSS/ABC.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
   <body>
@@ -20,23 +20,27 @@
         <button>
           <a href="../HTML/daysOfTheWeek.html">Days of the week</a>
         </button>
-        <button>Months of the Year</button>
+        <button><a href="../HTML/ABC.html">ABC</a></button>
       </nav>
     </div>
 
     <!-- Number into words -->
     <div id="numberAlign">
       <div id="game-container">
-        <h2>👇🏽 Number in words? 👇🏽</h2>
-        <div id="number-display">0</div>
-        <div id="buttonAlign">
-          <input type="text" id="user-input" autocomplete="off" />
-          <button id="check-btn">OK</button>
+        <h1>What is this?</h1>
+        <div id="image-container" style="text-align: center">
+          <img
+            id="number-display"
+            src=""
+            alt="ABC image"
+          />
         </div>
-        <div id="message"></div>
+
+        <input type="text" id="abc-input" />
+        <button id="buttonAlign">Check</button>
+        <p id="message"></p>
       </div>
     </div>
-
-    <script src="../js/number.js"></script>
+    <script src="../js/ABC.js"></script>
   </body>
 </html>
