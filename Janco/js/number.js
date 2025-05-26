@@ -21,6 +21,26 @@ const numberWords = {
   18: "eighteen",
   19: "nineteen",
   20: "twenty",
+  21: "twentyone",
+  22: "twentytwo",
+  23: "twentythree",
+  24: "twentyfour",
+  25: "twentyfive",
+  26: "twentysix",
+  27: "twentyseven",
+  28: "twentyeight",
+  29: "twentynine",
+  30: "thirty",
+  31: "thirtyone",
+  32: "thirtytwo",
+  33: "thirtythree",
+  34: "thirtyfour",
+  35: "thirtyfive",
+  36: "thirtysix",
+  37: "thirtyseven",
+  38: "thirtyeight",
+  39: "thirtynine",
+  40: "forty",
 };
 
 let currentNumber = 0;
@@ -43,34 +63,19 @@ $(document).ready(function () {
 
     if (userInput === correctWord) {
       $("#user-input").focus();
-      $("#message").text("Good job Janco! ✅").css({
+      $("#message").text("Good work, Janco! ✅").css({
         fontSize: "30px",
         color: "green",
       });
 
       currentNumber++;
 
-      if (currentNumber > 20) {
+      if (currentNumber > 40) {
         $("#number-display").text("🎉");
         $("#message")
           .text("You finished! Well done Janco!")
           .css("color", "blue");
-        setTimeout(() => {
-          $("#number-display").text(currentNumber);
-          $("#user-input").val("");
-          $("#message").text("");
-          ffffffiGG;
-        }, 5000);
-        currentNumber = 0;
-      } else if (currentNumber === 11) {
-        $("#number-display").text("😀");
-        $("#message").text("Yes Janco, almost there").css("color", "blue");
-        setTimeout(() => {
-          $("#number-display").text(currentNumber);
-          $("#user-input").val("");
-          $("#message").text("");
-        }, 1500);
-        $("#user-input").attr("placeholder", numberWords[currentNumber]);
+        //$("#check-btn").
       } else {
         if (currentNumber > 10) {
           $("#user-input").attr("placeholder", numberWords[currentNumber]);
@@ -83,7 +88,7 @@ $(document).ready(function () {
         }, 1000);
       }
     } else {
-      $("#message").text("Try again! ❌").css({
+      $("#message").text("Try again, Janco! ❌").css({
         fontSize: "30px",
         color: "red",
       });

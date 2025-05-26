@@ -3,10 +3,12 @@ $("body").css("background-color", randomColor);
 $("#intro h1").css("color", randomColor); // List of color names
 const colorWords = [
   "red",
-  "blue",
-  "green",
-  "yellow",
   "orange",
+  "yellow",
+  "green",
+  "blue",
+  "indigo",
+  "violet",
   "purple",
   "pink",
   "brown",
@@ -45,7 +47,7 @@ $(document).ready(function () {
     const correctColor = colorWords[currentIndex];
 
     if (userInput === correctColor) {
-      $("#message").text("Well done, superstar! 👏🏽").css({ color: "green" });
+      $("#message").text("Well done, Janco! 👏🏽").css({ color: "green" });
       currentIndex++;
 
       if (currentIndex >= colorWords.length) {
@@ -59,7 +61,7 @@ $(document).ready(function () {
         }, 1000);
       }
     } else {
-      $("#message").text("Try again 😊").css("color", "red");
+      $("#message").text("Try again Janco😊").css("color", "red");
     }
   });
 });
